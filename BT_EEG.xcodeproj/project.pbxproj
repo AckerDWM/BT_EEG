@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB12F7291BD658F5006FB7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F7281BD658F5006FB7A2 /* AppDelegate.swift */; };
+		BB12F72B1BD658F5006FB7A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F72A1BD658F5006FB7A2 /* ViewController.swift */; };
+		BB12F72D1BD658F5006FB7A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB12F72C1BD658F5006FB7A2 /* Images.xcassets */; };
+		BB12F7301BD658F5006FB7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB12F72E1BD658F5006FB7A2 /* Main.storyboard */; };
+		BB12F73C1BD658F5006FB7A2 /* BT_EEGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F73B1BD658F5006FB7A2 /* BT_EEGTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB12F7361BD658F5006FB7A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB12F71B1BD658F5006FB7A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB12F7221BD658F5006FB7A2;
+			remoteInfo = BT_EEG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB12F7231BD658F5006FB7A2 /* BT_EEG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BT_EEG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB12F7271BD658F5006FB7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB12F7281BD658F5006FB7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB12F72A1BD658F5006FB7A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB12F72C1BD658F5006FB7A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB12F72F1BD658F5006FB7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB12F7351BD658F5006FB7A2 /* BT_EEGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BT_EEGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB12F73A1BD658F5006FB7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB12F73B1BD658F5006FB7A2 /* BT_EEGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_EEGTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB12F7201BD658F5006FB7A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB12F7321BD658F5006FB7A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB12F71A1BD658F5006FB7A2 = {
+			isa = PBXGroup;
+			children = (
+				BB12F7251BD658F5006FB7A2 /* BT_EEG */,
+				BB12F7381BD658F5006FB7A2 /* BT_EEGTests */,
+				BB12F7241BD658F5006FB7A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB12F7241BD658F5006FB7A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F7231BD658F5006FB7A2 /* BT_EEG.app */,
+				BB12F7351BD658F5006FB7A2 /* BT_EEGTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB12F7251BD658F5006FB7A2 /* BT_EEG */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F7281BD658F5006FB7A2 /* AppDelegate.swift */,
+				BB12F72A1BD658F5006FB7A2 /* ViewController.swift */,
+				BB12F72C1BD658F5006FB7A2 /* Images.xcassets */,
+				BB12F72E1BD658F5006FB7A2 /* Main.storyboard */,
+				BB12F7261BD658F5006FB7A2 /* Supporting Files */,
+			);
+			path = BT_EEG;
+			sourceTree = "<group>";
+		};
+		BB12F7261BD658F5006FB7A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F7271BD658F5006FB7A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB12F7381BD658F5006FB7A2 /* BT_EEGTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F73B1BD658F5006FB7A2 /* BT_EEGTests.swift */,
+				BB12F7391BD658F5006FB7A2 /* Supporting Files */,
+			);
+			path = BT_EEGTests;
+			sourceTree = "<group>";
+		};
+		BB12F7391BD658F5006FB7A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F73A1BD658F5006FB7A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB12F7221BD658F5006FB7A2 /* BT_EEG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB12F73F1BD658F5006FB7A2 /* Build configuration list for PBXNativeTarget "BT_EEG" */;
+			buildPhases = (
+				BB12F71F1BD658F5006FB7A2 /* Sources */,
+				BB12F7201BD658F5006FB7A2 /* Frameworks */,
+				BB12F7211BD658F5006FB7A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BT_EEG;
+			productName = BT_EEG;
+			productReference = BB12F7231BD658F5006FB7A2 /* BT_EEG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB12F7341BD658F5006FB7A2 /* BT_EEGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB12F7421BD658F5006FB7A2 /* Build configuration list for PBXNativeTarget "BT_EEGTests" */;
+			buildPhases = (
+				BB12F7311BD658F5006FB7A2 /* Sources */,
+				BB12F7321BD658F5006FB7A2 /* Frameworks */,
+				BB12F7331BD658F5006FB7A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB12F7371BD658F5006FB7A2 /* PBXTargetDependency */,
+			);
+			name = BT_EEGTests;
+			productName = BT_EEGTests;
+			productReference = BB12F7351BD658F5006FB7A2 /* BT_EEGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB12F71B1BD658F5006FB7A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Daniel Acker";
+				TargetAttributes = {
+					BB12F7221BD658F5006FB7A2 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BB12F7341BD658F5006FB7A2 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BB12F7221BD658F5006FB7A2;
+					};
+				};
+			};
+			buildConfigurationList = BB12F71E1BD658F5006FB7A2 /* Build configuration list for PBXProject "BT_EEG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB12F71A1BD658F5006FB7A2;
+			productRefGroup = BB12F7241BD658F5006FB7A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB12F7221BD658F5006FB7A2 /* BT_EEG */,
+				BB12F7341BD658F5006FB7A2 /* BT_EEGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB12F7211BD658F5006FB7A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB12F72D1BD658F5006FB7A2 /* Images.xcassets in Resources */,
+				BB12F7301BD658F5006FB7A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB12F7331BD658F5006FB7A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB12F71F1BD658F5006FB7A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB12F72B1BD658F5006FB7A2 /* ViewController.swift in Sources */,
+				BB12F7291BD658F5006FB7A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB12F7311BD658F5006FB7A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB12F73C1BD658F5006FB7A2 /* BT_EEGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB12F7371BD658F5006FB7A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB12F7221BD658F5006FB7A2 /* BT_EEG */;
+			targetProxy = BB12F7361BD658F5006FB7A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB12F72E1BD658F5006FB7A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB12F72F1BD658F5006FB7A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB12F73D1BD658F5006FB7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB12F73E1BD658F5006FB7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB12F7401BD658F5006FB7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BT_EEG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB12F7411BD658F5006FB7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BT_EEG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BB12F7431BD658F5006FB7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BT_EEGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BT_EEG.app/Contents/MacOS/BT_EEG";
+			};
+			name = Debug;
+		};
+		BB12F7441BD658F5006FB7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BT_EEGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BT_EEG.app/Contents/MacOS/BT_EEG";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB12F71E1BD658F5006FB7A2 /* Build configuration list for PBXProject "BT_EEG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB12F73D1BD658F5006FB7A2 /* Debug */,
+				BB12F73E1BD658F5006FB7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB12F73F1BD658F5006FB7A2 /* Build configuration list for PBXNativeTarget "BT_EEG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB12F7401BD658F5006FB7A2 /* Debug */,
+				BB12F7411BD658F5006FB7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB12F7421BD658F5006FB7A2 /* Build configuration list for PBXNativeTarget "BT_EEGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB12F7431BD658F5006FB7A2 /* Debug */,
+				BB12F7441BD658F5006FB7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB12F71B1BD658F5006FB7A2 /* Project object */;
+}
