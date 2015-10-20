@@ -14,7 +14,7 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   @IBOutlet weak var graph: DynamicGraph!
   
   var graphTimer = NSTimer()
-  var graphData = [CGFloat](count: 1000, repeatedValue: 100)
+  var graphData = [CGFloat](count: 800, repeatedValue: 0)
   var dataBuffer = NSMutableData()
   var serialReadNumber = 0
   let serialPort = ORSSerialPort(path: "/dev/tty.HC-06-DevB")
@@ -23,23 +23,11 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   {
     super.viewDidLoad()
     
-    serialBegin()
-    graphTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateGraph", userInfo: nil, repeats: true)
+    serialPort?.delegate = self
+    serialPort!.baudRate = 9600
   }
   
   // MARK : ORSSerialPortDelegate
-  
-  func serialBegin()
-  {
-    serialPort?.delegate = self
-    serialPort!.baudRate = 9600
-    serialPort!.open()
-  }
-  
-  func serialEnd()
-  {
-    serialPort!.close()
-  }
   
   func serialPort(serialPort: ORSSerialPort, didReceiveData data: NSData)
   {
@@ -52,20 +40,42 @@ class ViewController: NSViewController, ORSSerialPortDelegate
     }
   }
   
-  func serialPort(serialPort: ORSSerialPort, didEncounterError error: NSError) {
+  func serialPort(serialPort: ORSSerialPort, didEncounterError error: NSError)
+  {
+    let alert = NSAlert()
+    alert.messageText = "Serial connection error"
+    alert.addButtonWithTitle("OK")
+    alert.informativeText = "The bluetooth EEG device could not be found. Make sure that it is turned on and paired with this computer."
+    alert.beginSheetModalForWindow(self.view.window!, completionHandler: nil )
+  }
+  
+  func serialPortWasClosed(serialPort: ORSSerialPort)
+  {
     
   }
   
-  func serialPortWasClosed(serialPort: ORSSerialPort) {
+  func serialPortWasOpened(serialPort: ORSSerialPort)
+  {
     
   }
   
-  func serialPortWasOpened(serialPort: ORSSerialPort) {
+  func serialPortWasRemovedFromSystem(serialPort: ORSSerialPort)
+  {
     
   }
   
-  func serialPortWasRemovedFromSystem(serialPort: ORSSerialPort) {
-    
+  // MARK : Button actions
+  
+  @IBAction func recordBtn(sender: AnyObject)
+  {
+    serialPort!.open()
+    graphTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateGraph", userInfo: nil, repeats: true)
+  }
+  
+  @IBAction func stopBtn(sender: AnyObject)
+  {
+    graphTimer.invalidate()
+    serialPort!.close()
   }
   
   // MARK : Custom functions
@@ -96,7 +106,6 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   }
   
   // update the plot
-  
   func updateGraph()
   {
     graph.points = graphData

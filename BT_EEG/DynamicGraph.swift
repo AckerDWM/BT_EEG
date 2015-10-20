@@ -11,10 +11,12 @@ import Cocoa
 class DynamicGraph: NSView
 {
 
-  var points = [CGFloat](count: 1000, repeatedValue: 100)
+  var points = [CGFloat](count: 1000, repeatedValue: 0)
   
   override func drawRect(dirtyRect: NSRect)
   {
+    NSColor.whiteColor().setFill()
+    NSRectFill(dirtyRect)
     super.drawRect(dirtyRect)
 
     // Drawing code here.
@@ -30,6 +32,14 @@ class DynamicGraph: NSView
       path.lineToPoint(nextPoint)
     }
     path.stroke()
+    
+    // Draw axes
+    let xAxisPath = NSBezierPath()
+    xAxisPath.moveToPoint(CGPoint(x: 0, y: height / 2))
+    xAxisPath.lineToPoint(CGPoint(x: width, y: height / 2))
+    xAxisPath.setLineDash([5, 5], count: 2, phase: 0)
+    xAxisPath.lineWidth = 2
+    xAxisPath.stroke()
   }
     
 }

@@ -672,15 +672,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oHN-0f-eHl">
+                                <rect key="frame" x="20" y="231" width="56" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="Record" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JXG-gH-wQs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="controlContent"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="recordBtn:" target="XfG-lQ-9wD" id="j9X-oS-mbh"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ygL-Fk-6VU">
+                                <rect key="frame" x="84" y="231" width="42" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="Stop" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DK0-1H-lmM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="controlContent"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="stopBtn:" target="XfG-lQ-9wD" id="jar-BP-J8e"/>
+                                </connections>
+                            </button>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="pmS-6d-7A1" customClass="DynamicGraph" customModule="BT_EEG" customModuleProvider="target">
-                                <rect key="frame" x="20" y="20" width="440" height="230"/>
+                                <rect key="frame" x="20" y="20" width="440" height="204"/>
                             </customView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="ygL-Fk-6VU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="2tL-r5-HGa"/>
                             <constraint firstItem="pmS-6d-7A1" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="3HI-LN-mD8"/>
-                            <constraint firstItem="pmS-6d-7A1" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Dzz-xo-1UO"/>
+                            <constraint firstItem="oHN-0f-eHl" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="5HV-kZ-Bqg"/>
+                            <constraint firstItem="ygL-Fk-6VU" firstAttribute="leading" secondItem="oHN-0f-eHl" secondAttribute="trailing" constant="8" id="9Ck-zV-3KA"/>
+                            <constraint firstItem="oHN-0f-eHl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ThP-zd-8yU"/>
                             <constraint firstAttribute="trailing" secondItem="pmS-6d-7A1" secondAttribute="trailing" constant="20" id="YTe-cT-txa"/>
-                            <constraint firstAttribute="centerY" secondItem="pmS-6d-7A1" secondAttribute="centerY" id="itD-dI-Rof"/>
+                            <constraint firstItem="pmS-6d-7A1" firstAttribute="top" secondItem="oHN-0f-eHl" secondAttribute="bottom" constant="8" id="i9B-gL-Ciu"/>
                             <constraint firstAttribute="bottom" secondItem="pmS-6d-7A1" secondAttribute="bottom" constant="20" id="vQy-dB-EBx"/>
                         </constraints>
                     </view>
