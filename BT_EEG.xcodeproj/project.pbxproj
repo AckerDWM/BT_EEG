@@ -12,6 +12,13 @@
 		BB12F72D1BD658F5006FB7A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB12F72C1BD658F5006FB7A2 /* Images.xcassets */; };
 		BB12F7301BD658F5006FB7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB12F72E1BD658F5006FB7A2 /* Main.storyboard */; };
 		BB12F73C1BD658F5006FB7A2 /* BT_EEGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F73B1BD658F5006FB7A2 /* BT_EEGTests.swift */; };
+		BB12F74F1BD6593A006FB7A2 /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB12F7471BD6593A006FB7A2 /* ORSSerialBuffer.m */; };
+		BB12F7501BD6593A006FB7A2 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BB12F7491BD6593A006FB7A2 /* ORSSerialPacketDescriptor.m */; };
+		BB12F7511BD6593A006FB7A2 /* ORSSerialPort-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB12F74A1BD6593A006FB7A2 /* ORSSerialPort-dummy.m */; };
+		BB12F7521BD6593A006FB7A2 /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = BB12F74E1BD6593A006FB7A2 /* ORSSerialPort.m */; };
+		BB12F7571BD6594E006FB7A2 /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB12F7541BD6594E006FB7A2 /* ORSSerialPortManager.m */; };
+		BB12F7581BD6594E006FB7A2 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB12F7561BD6594E006FB7A2 /* ORSSerialRequest.m */; };
+		BB12F75D1BD676F6006FB7A2 /* DynamicGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12F75C1BD676F6006FB7A2 /* DynamicGraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,21 @@
 		BB12F7351BD658F5006FB7A2 /* BT_EEGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BT_EEGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB12F73A1BD658F5006FB7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB12F73B1BD658F5006FB7A2 /* BT_EEGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BT_EEGTests.swift; sourceTree = "<group>"; };
+		BB12F7451BD65939006FB7A2 /* BT_EEG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BT_EEG-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB12F7461BD6593A006FB7A2 /* ORSSerialBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialBuffer.h; sourceTree = "<group>"; };
+		BB12F7471BD6593A006FB7A2 /* ORSSerialBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialBuffer.m; sourceTree = "<group>"; };
+		BB12F7481BD6593A006FB7A2 /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		BB12F7491BD6593A006FB7A2 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		BB12F74A1BD6593A006FB7A2 /* ORSSerialPort-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ORSSerialPort-dummy.m"; sourceTree = "<group>"; };
+		BB12F74B1BD6593A006FB7A2 /* ORSSerialPort-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort-prefix.pch"; sourceTree = "<group>"; };
+		BB12F74C1BD6593A006FB7A2 /* ORSSerialPort-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort-umbrella.h"; sourceTree = "<group>"; };
+		BB12F74D1BD6593A006FB7A2 /* ORSSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPort.h; sourceTree = "<group>"; };
+		BB12F74E1BD6593A006FB7A2 /* ORSSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPort.m; sourceTree = "<group>"; };
+		BB12F7531BD6594E006FB7A2 /* ORSSerialPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortManager.h; sourceTree = "<group>"; };
+		BB12F7541BD6594E006FB7A2 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortManager.m; sourceTree = "<group>"; };
+		BB12F7551BD6594E006FB7A2 /* ORSSerialRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialRequest.h; sourceTree = "<group>"; };
+		BB12F7561BD6594E006FB7A2 /* ORSSerialRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialRequest.m; sourceTree = "<group>"; };
+		BB12F75C1BD676F6006FB7A2 /* DynamicGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicGraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +99,12 @@
 			children = (
 				BB12F7281BD658F5006FB7A2 /* AppDelegate.swift */,
 				BB12F72A1BD658F5006FB7A2 /* ViewController.swift */,
+				BB12F75C1BD676F6006FB7A2 /* DynamicGraph.swift */,
 				BB12F72C1BD658F5006FB7A2 /* Images.xcassets */,
 				BB12F72E1BD658F5006FB7A2 /* Main.storyboard */,
+				BB12F7591BD65974006FB7A2 /* ORSSerialPort */,
 				BB12F7261BD658F5006FB7A2 /* Supporting Files */,
+				BB12F7451BD65939006FB7A2 /* BT_EEG-Bridging-Header.h */,
 			);
 			path = BT_EEG;
 			sourceTree = "<group>";
@@ -107,6 +132,26 @@
 				BB12F73A1BD658F5006FB7A2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB12F7591BD65974006FB7A2 /* ORSSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				BB12F7461BD6593A006FB7A2 /* ORSSerialBuffer.h */,
+				BB12F7471BD6593A006FB7A2 /* ORSSerialBuffer.m */,
+				BB12F7481BD6593A006FB7A2 /* ORSSerialPacketDescriptor.h */,
+				BB12F7491BD6593A006FB7A2 /* ORSSerialPacketDescriptor.m */,
+				BB12F74A1BD6593A006FB7A2 /* ORSSerialPort-dummy.m */,
+				BB12F74B1BD6593A006FB7A2 /* ORSSerialPort-prefix.pch */,
+				BB12F74C1BD6593A006FB7A2 /* ORSSerialPort-umbrella.h */,
+				BB12F74D1BD6593A006FB7A2 /* ORSSerialPort.h */,
+				BB12F74E1BD6593A006FB7A2 /* ORSSerialPort.m */,
+				BB12F7531BD6594E006FB7A2 /* ORSSerialPortManager.h */,
+				BB12F7541BD6594E006FB7A2 /* ORSSerialPortManager.m */,
+				BB12F7551BD6594E006FB7A2 /* ORSSerialRequest.h */,
+				BB12F7561BD6594E006FB7A2 /* ORSSerialRequest.m */,
+			);
+			name = ORSSerialPort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB12F72B1BD658F5006FB7A2 /* ViewController.swift in Sources */,
+				BB12F7501BD6593A006FB7A2 /* ORSSerialPacketDescriptor.m in Sources */,
+				BB12F7581BD6594E006FB7A2 /* ORSSerialRequest.m in Sources */,
 				BB12F7291BD658F5006FB7A2 /* AppDelegate.swift in Sources */,
+				BB12F7521BD6593A006FB7A2 /* ORSSerialPort.m in Sources */,
+				BB12F7511BD6593A006FB7A2 /* ORSSerialPort-dummy.m in Sources */,
+				BB12F7571BD6594E006FB7A2 /* ORSSerialPortManager.m in Sources */,
+				BB12F74F1BD6593A006FB7A2 /* ORSSerialBuffer.m in Sources */,
+				BB12F75D1BD676F6006FB7A2 /* DynamicGraph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +379,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BT_EEG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BT_EEG/BT_EEG-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -338,10 +393,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = BT_EEG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BT_EEG/BT_EEG-Bridging-Header.h";
 			};
 			name = Release;
 		};

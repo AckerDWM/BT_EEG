@@ -8,11 +8,10 @@
 
 import Cocoa
 
-@IBDesignable
 class DynamicGraph: NSView
 {
 
-  var points = [CGFloat](count: 100, repeatedValue: 0)
+  var points = [CGFloat](count: 1000, repeatedValue: 100)
   
   override func drawRect(dirtyRect: NSRect)
   {
@@ -22,11 +21,12 @@ class DynamicGraph: NSView
     let height = self.bounds.height
     let width = self.bounds.width
     let path = NSBezierPath()
-    let pointCount = CGFloat(self.points.count)
-    path.moveToPoint(CGPointMake(width / pointCount, self.points[1]))
-    for (var i = 1; i < self.points.count; i++)
+    let pointCount = CGFloat(points.count)
+    path.moveToPoint(CGPointMake(width / pointCount, points[1]))
+    for (var i = 1; i < points.count; i++)
     {
-      let nextPoint = CGPointMake(CGFloat(i) * width / pointCount, self.points[i])
+      let remappedPoint = (points[i] / 1024) * height // map the newPoint to the graph's size
+      let nextPoint = CGPointMake(CGFloat(i) * width / pointCount, remappedPoint)
       path.lineToPoint(nextPoint)
     }
     path.stroke()
