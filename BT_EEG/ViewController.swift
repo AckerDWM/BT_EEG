@@ -17,7 +17,7 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   var graphData = [CGFloat](count: 800, repeatedValue: 0)
   var dataBuffer = NSMutableData()
   var serialReadNumber = 0
-  let serialPort = ORSSerialPort(path: "/dev/tty.HC-06-DevB")
+  let serialPort = ORSSerialPort(path: "/dev/tty.HC-06-DevB") // will crash if not paired
   
   override func viewDidLoad()
   {
@@ -51,12 +51,12 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   
   func serialPortWasClosed(serialPort: ORSSerialPort)
   {
-    
+    graphTimer.invalidate()
   }
   
   func serialPortWasOpened(serialPort: ORSSerialPort)
   {
-    
+    graphTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateGraph", userInfo: nil, repeats: true)
   }
   
   func serialPortWasRemovedFromSystem(serialPort: ORSSerialPort)
@@ -69,12 +69,10 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   @IBAction func recordBtn(sender: AnyObject)
   {
     serialPort!.open()
-    graphTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateGraph", userInfo: nil, repeats: true)
   }
   
   @IBAction func stopBtn(sender: AnyObject)
   {
-    graphTimer.invalidate()
     serialPort!.close()
   }
   
