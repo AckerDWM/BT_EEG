@@ -86,7 +86,7 @@ class ViewController: NSViewController, ORSSerialPortDelegate
     var newPoints: [CGFloat] = []
     for char in splitDataString!
     {
-      if let integerValue = (char as! String).toInt()
+      if let integerValue = Int((char ))
       {
         newPoints.append(CGFloat(integerValue))
       }
@@ -99,7 +99,7 @@ class ViewController: NSViewController, ORSSerialPortDelegate
   {
     var newGraphData = graphData
     newGraphData.removeRange(0...newPoints.count - 1)
-    newGraphData.extend(newPoints)
+    newGraphData.appendContentsOf(newPoints)
     graphData = newGraphData
   }
   
